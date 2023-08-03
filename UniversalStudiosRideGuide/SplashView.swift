@@ -19,7 +19,7 @@ struct SplashView: View {
             } else {
                 Color.black
                     .edgesIgnoringSafeArea(.all)
-                Text("Logo Here").foregroundColor(/*@START_MENU_TOKEN@*/.blue/*@END_MENU_TOKEN@*/)
+                Text("Logo").foregroundColor(/*@START_MENU_TOKEN@*/.blue/*@END_MENU_TOKEN@*/)
             }
         }.onAppear {
             DispatchQueue.main.asyncAfter(deadline: .now() + 2.5) {
