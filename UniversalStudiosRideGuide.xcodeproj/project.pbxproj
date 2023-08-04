@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		493442D62A7BA17900B87253 /* AuthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 493442D52A7BA17900B87253 /* AuthView.swift */; };
+		499EA5F22A7C3B2D00F12A6F /* EnterUsernameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 499EA5F12A7C3B2D00F12A6F /* EnterUsernameView.swift */; };
+		499EA5F42A7C899800F12A6F /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 499EA5F32A7C899800F12A6F /* HomeView.swift */; };
+		499EA5F62A7CD7B300F12A6F /* TabItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 499EA5F52A7CD7B300F12A6F /* TabItemView.swift */; };
+		499EA5F92A7CD9AF00F12A6F /* LandingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 499EA5F82A7CD9AF00F12A6F /* LandingView.swift */; };
+		499EA5FB2A7CD9CE00F12A6F /* RideView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 499EA5FA2A7CD9CE00F12A6F /* RideView.swift */; };
+		499EA5FD2A7CDC7500F12A6F /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 499EA5FC2A7CDC7500F12A6F /* MapView.swift */; };
 		49C7EFE32A7B81C0004792A9 /* UniversalStudiosRideGuideApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C7EFE22A7B81C0004792A9 /* UniversalStudiosRideGuideApp.swift */; };
 		49C7EFE52A7B81C0004792A9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C7EFE42A7B81C0004792A9 /* ContentView.swift */; };
 		49C7EFE72A7B81C3004792A9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 49C7EFE62A7B81C3004792A9 /* Assets.xcassets */; };
@@ -18,6 +25,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		493442D52A7BA17900B87253 /* AuthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthView.swift; sourceTree = "<group>"; };
+		499EA5F12A7C3B2D00F12A6F /* EnterUsernameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnterUsernameView.swift; sourceTree = "<group>"; };
+		499EA5F32A7C899800F12A6F /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		499EA5F52A7CD7B300F12A6F /* TabItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabItemView.swift; sourceTree = "<group>"; };
+		499EA5F82A7CD9AF00F12A6F /* LandingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingView.swift; sourceTree = "<group>"; };
+		499EA5FA2A7CD9CE00F12A6F /* RideView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RideView.swift; sourceTree = "<group>"; };
+		499EA5FC2A7CDC7500F12A6F /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		49C7EFDF2A7B81C0004792A9 /* UniversalStudiosRideGuide.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UniversalStudiosRideGuide.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		49C7EFE22A7B81C0004792A9 /* UniversalStudiosRideGuideApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UniversalStudiosRideGuideApp.swift; sourceTree = "<group>"; };
 		49C7EFE42A7B81C0004792A9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -40,6 +54,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		499EA5F72A7CD99B00F12A6F /* HomeViews */ = {
+			isa = PBXGroup;
+			children = (
+				499EA5F82A7CD9AF00F12A6F /* LandingView.swift */,
+				499EA5FC2A7CDC7500F12A6F /* MapView.swift */,
+				499EA5FA2A7CD9CE00F12A6F /* RideView.swift */,
+			);
+			path = HomeViews;
+			sourceTree = "<group>";
+		};
 		49C7EFD62A7B81C0004792A9 = {
 			isa = PBXGroup;
 			children = (
@@ -63,6 +87,11 @@
 				49C7EFE22A7B81C0004792A9 /* UniversalStudiosRideGuideApp.swift */,
 				49C7EFE42A7B81C0004792A9 /* ContentView.swift */,
 				49C7EFF22A7B82F3004792A9 /* SplashView.swift */,
+				493442D52A7BA17900B87253 /* AuthView.swift */,
+				499EA5F12A7C3B2D00F12A6F /* EnterUsernameView.swift */,
+				499EA5F52A7CD7B300F12A6F /* TabItemView.swift */,
+				499EA5F32A7C899800F12A6F /* HomeView.swift */,
+				499EA5F72A7CD99B00F12A6F /* HomeViews */,
 				49C7EFE62A7B81C3004792A9 /* Assets.xcassets */,
 				49C7EFF02A7B8228004792A9 /* GoogleService-Info.plist */,
 				49C7EFE82A7B81C3004792A9 /* Preview Content */,
@@ -163,9 +192,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				499EA5FB2A7CD9CE00F12A6F /* RideView.swift in Sources */,
 				49C7EFE52A7B81C0004792A9 /* ContentView.swift in Sources */,
+				499EA5F62A7CD7B300F12A6F /* TabItemView.swift in Sources */,
 				49C7EFE32A7B81C0004792A9 /* UniversalStudiosRideGuideApp.swift in Sources */,
+				493442D62A7BA17900B87253 /* AuthView.swift in Sources */,
+				499EA5F92A7CD9AF00F12A6F /* LandingView.swift in Sources */,
+				499EA5F42A7C899800F12A6F /* HomeView.swift in Sources */,
+				499EA5FD2A7CDC7500F12A6F /* MapView.swift in Sources */,
 				49C7EFF32A7B82F3004792A9 /* SplashView.swift in Sources */,
+				499EA5F22A7C3B2D00F12A6F /* EnterUsernameView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

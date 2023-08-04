@@ -14,7 +14,7 @@ struct SplashView: View {
     var body: some View {
         ZStack {
             if self.isActive {
-                ContentView()
+                AuthView()
                 // Change this to auth view
             } else {
                 Color.black
