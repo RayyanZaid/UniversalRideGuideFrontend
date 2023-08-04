@@ -22,8 +22,9 @@ struct LandingView: View {
     var body: some View {
         
         let topBar = HStack {
-            Text("Hi, \(username)")
-                .font(.custom("Chalkboard SE", size: UIScreen.main.bounds.width * 0.09).bold())
+            Text("Hello, \(username)")
+                .font(
+                    .custom("Chalkboard SE", size: UIScreen.main.bounds.width * 0.09).bold())
                 .frame(maxWidth: .infinity, alignment: .leading)
                 .foregroundColor(.white)
             Spacer()
@@ -35,10 +36,15 @@ struct LandingView: View {
         .padding(.horizontal, 20)
         
         
-        var rideBox =  RoundedRectangle(cornerRadius: 25)
+        let rideBox =  ZStack {
+            
+            RoundedRectangle(cornerRadius: 25)
             .frame(width: UIScreen.main.bounds.width * 0.85, height: UIScreen.main.bounds.height * 0.6)
             .foregroundColor(.white)
             .shadow(radius: 60)
+            
+        }
+            
         
         VStack {
             
