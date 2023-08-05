@@ -36,21 +36,14 @@ struct LandingView: View {
         .padding(.horizontal, 20)
         
         
-        let rideBox =  ZStack {
-            
-            RoundedRectangle(cornerRadius: 25)
-            .frame(width: UIScreen.main.bounds.width * 0.85, height: UIScreen.main.bounds.height * 0.6)
-            .foregroundColor(.white)
-            .shadow(radius: 60)
-            
-        }
+        
             
         
         VStack {
             
             topBar
             Spacer()
-            rideBox
+            RideScheduleBox()
             Spacer()
         }
 

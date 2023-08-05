@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		493442D62A7BA17900B87253 /* AuthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 493442D52A7BA17900B87253 /* AuthView.swift */; };
+		4968F0FB2A7D88B900124291 /* RideScheduleBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4968F0FA2A7D88B900124291 /* RideScheduleBox.swift */; };
+		4968F0FE2A7E3CE200124291 /* RideManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4968F0FD2A7E3CE200124291 /* RideManager.swift */; };
 		499EA5F22A7C3B2D00F12A6F /* EnterUsernameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 499EA5F12A7C3B2D00F12A6F /* EnterUsernameView.swift */; };
 		499EA5F42A7C899800F12A6F /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 499EA5F32A7C899800F12A6F /* HomeView.swift */; };
 		499EA5F62A7CD7B300F12A6F /* TabItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 499EA5F52A7CD7B300F12A6F /* TabItemView.swift */; };
@@ -28,6 +30,8 @@
 
 /* Begin PBXFileReference section */
 		493442D52A7BA17900B87253 /* AuthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthView.swift; sourceTree = "<group>"; };
+		4968F0FA2A7D88B900124291 /* RideScheduleBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RideScheduleBox.swift; sourceTree = "<group>"; };
+		4968F0FD2A7E3CE200124291 /* RideManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RideManager.swift; sourceTree = "<group>"; };
 		499EA5F12A7C3B2D00F12A6F /* EnterUsernameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnterUsernameView.swift; sourceTree = "<group>"; };
 		499EA5F32A7C899800F12A6F /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		499EA5F52A7CD7B300F12A6F /* TabItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabItemView.swift; sourceTree = "<group>"; };
@@ -58,13 +62,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4968F0F92A7D889B00124291 /* LandingViewComponents */ = {
+			isa = PBXGroup;
+			children = (
+				4968F0FA2A7D88B900124291 /* RideScheduleBox.swift */,
+			);
+			path = LandingViewComponents;
+			sourceTree = "<group>";
+		};
+		4968F0FC2A7E3C9900124291 /* RideViewComponents */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = RideViewComponents;
+			sourceTree = "<group>";
+		};
 		499EA5F72A7CD99B00F12A6F /* HomeViews */ = {
 			isa = PBXGroup;
 			children = (
 				499EA5F82A7CD9AF00F12A6F /* LandingView.swift */,
-				499EA5FC2A7CDC7500F12A6F /* MapView.swift */,
+				4968F0F92A7D889B00124291 /* LandingViewComponents */,
 				499EA5FA2A7CD9CE00F12A6F /* RideView.swift */,
+				4968F0FC2A7E3C9900124291 /* RideViewComponents */,
 				499EA5FE2A7CE05F00F12A6F /* FirebaseFunctionsGetters.swift */,
+				499EA5FC2A7CDC7500F12A6F /* MapView.swift */,
+				4968F0FD2A7E3CE200124291 /* RideManager.swift */,
 			);
 			path = HomeViews;
 			sourceTree = "<group>";
@@ -94,8 +116,8 @@
 				49C7EFF22A7B82F3004792A9 /* SplashView.swift */,
 				493442D52A7BA17900B87253 /* AuthView.swift */,
 				499EA5F12A7C3B2D00F12A6F /* EnterUsernameView.swift */,
-				499EA5F52A7CD7B300F12A6F /* TabItemView.swift */,
 				499EA5F32A7C899800F12A6F /* HomeView.swift */,
+				499EA5F52A7CD7B300F12A6F /* TabItemView.swift */,
 				499EA6002A7CE2BE00F12A6F /* OptimalRouteAlgorithm.swift */,
 				499EA5F72A7CD99B00F12A6F /* HomeViews */,
 				49C7EFE62A7B81C3004792A9 /* Assets.xcassets */,
@@ -206,8 +228,10 @@
 				493442D62A7BA17900B87253 /* AuthView.swift in Sources */,
 				499EA5F92A7CD9AF00F12A6F /* LandingView.swift in Sources */,
 				499EA5F42A7C899800F12A6F /* HomeView.swift in Sources */,
+				4968F0FB2A7D88B900124291 /* RideScheduleBox.swift in Sources */,
 				499EA5FD2A7CDC7500F12A6F /* MapView.swift in Sources */,
 				49C7EFF32A7B82F3004792A9 /* SplashView.swift in Sources */,
+				4968F0FE2A7E3CE200124291 /* RideManager.swift in Sources */,
 				499EA5F22A7C3B2D00F12A6F /* EnterUsernameView.swift in Sources */,
 				499EA5FF2A7CE05F00F12A6F /* FirebaseFunctionsGetters.swift in Sources */,
 			);

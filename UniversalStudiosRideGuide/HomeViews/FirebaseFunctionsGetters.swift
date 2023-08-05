@@ -12,7 +12,7 @@ let db = Firestore.firestore()
 
 func getSelectedRides(email : String) -> [String] {
     
-    return ["Ride 1" , "Ride 2"];
+    return ["Revenge of the Mummy" , "Dispicable Me Mayhem" , "Flight of the Hippogriff"];
 }
 
 
