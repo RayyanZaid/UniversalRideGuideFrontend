@@ -26,6 +26,8 @@
 		49C7EFF32A7B82F3004792A9 /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C7EFF22A7B82F3004792A9 /* SplashView.swift */; };
 		49C7F0632A7B91D3004792A9 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 49C7F0622A7B91D3004792A9 /* FirebaseAuth */; };
 		49C7F0652A7B9204004792A9 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 49C7F0642A7B9204004792A9 /* FirebaseFirestore */; };
+		49D8B2092A80D1E300AAABF7 /* RidesFromFirestore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49D8B2082A80D1E300AAABF7 /* RidesFromFirestore.swift */; };
+		49D8B20B2A80E00900AAABF7 /* FirebaseFunctionsSetters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49D8B20A2A80E00900AAABF7 /* FirebaseFunctionsSetters.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,6 +49,8 @@
 		49C7EFE92A7B81C3004792A9 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		49C7EFF02A7B8228004792A9 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		49C7EFF22A7B82F3004792A9 /* SplashView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
+		49D8B2082A80D1E300AAABF7 /* RidesFromFirestore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RidesFromFirestore.swift; sourceTree = "<group>"; };
+		49D8B20A2A80E00900AAABF7 /* FirebaseFunctionsSetters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseFunctionsSetters.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +69,7 @@
 		4968F0F92A7D889B00124291 /* LandingViewComponents */ = {
 			isa = PBXGroup;
 			children = (
+				499EA5F82A7CD9AF00F12A6F /* LandingView.swift */,
 				4968F0FA2A7D88B900124291 /* RideScheduleBox.swift */,
 			);
 			path = LandingViewComponents;
@@ -73,6 +78,8 @@
 		4968F0FC2A7E3C9900124291 /* RideViewComponents */ = {
 			isa = PBXGroup;
 			children = (
+				499EA5FA2A7CD9CE00F12A6F /* RideView.swift */,
+				49D8B2082A80D1E300AAABF7 /* RidesFromFirestore.swift */,
 			);
 			path = RideViewComponents;
 			sourceTree = "<group>";
@@ -80,11 +87,10 @@
 		499EA5F72A7CD99B00F12A6F /* HomeViews */ = {
 			isa = PBXGroup;
 			children = (
-				499EA5F82A7CD9AF00F12A6F /* LandingView.swift */,
 				4968F0F92A7D889B00124291 /* LandingViewComponents */,
-				499EA5FA2A7CD9CE00F12A6F /* RideView.swift */,
 				4968F0FC2A7E3C9900124291 /* RideViewComponents */,
 				499EA5FE2A7CE05F00F12A6F /* FirebaseFunctionsGetters.swift */,
+				49D8B20A2A80E00900AAABF7 /* FirebaseFunctionsSetters.swift */,
 				499EA5FC2A7CDC7500F12A6F /* MapView.swift */,
 				4968F0FD2A7E3CE200124291 /* RideManager.swift */,
 			);
@@ -221,6 +227,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				499EA5FB2A7CD9CE00F12A6F /* RideView.swift in Sources */,
+				49D8B2092A80D1E300AAABF7 /* RidesFromFirestore.swift in Sources */,
 				49C7EFE52A7B81C0004792A9 /* ContentView.swift in Sources */,
 				499EA6012A7CE2BE00F12A6F /* OptimalRouteAlgorithm.swift in Sources */,
 				499EA5F62A7CD7B300F12A6F /* TabItemView.swift in Sources */,
@@ -232,6 +239,7 @@
 				499EA5FD2A7CDC7500F12A6F /* MapView.swift in Sources */,
 				49C7EFF32A7B82F3004792A9 /* SplashView.swift in Sources */,
 				4968F0FE2A7E3CE200124291 /* RideManager.swift in Sources */,
+				49D8B20B2A80E00900AAABF7 /* FirebaseFunctionsSetters.swift in Sources */,
 				499EA5F22A7C3B2D00F12A6F /* EnterUsernameView.swift in Sources */,
 				499EA5FF2A7CE05F00F12A6F /* FirebaseFunctionsGetters.swift in Sources */,
 			);

@@ -9,18 +9,7 @@ struct MapView: View {
     var body: some View {
         Map()
         
-        Button(action: {
-            selectedRidesManager.addSelectedride("Ride \(count)")
-            count = count + 1;
-            if selectedRidesManager.selectedRides.count != 0 {
-                for ride in selectedRidesManager.selectedRides {
-                    print(ride)
-                }
-            }
-       
-        }) {
-            Text("Click here")
-        }
+    
     }
 }
 

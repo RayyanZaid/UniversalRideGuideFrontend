@@ -37,7 +37,7 @@ struct HomeView: View {
             }
             
             if selectedTab == .rides {
-                RideView()
+                RideView(email: email)
             }
             
             if selectedTab == .map {

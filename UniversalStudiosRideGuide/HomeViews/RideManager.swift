@@ -1,20 +1,20 @@
 import Foundation
+import CoreLocation
 
 struct Ride: Identifiable {
     let name: String
     let id: String
-    let latitude: Double
-    let longitude: Double
-    let waitTime: Int
+    let coordinates : CLLocationCoordinate2D
+    let waitTimes: [Int]
     let duration: Int
     
+    
     // Designated initializer with default parameter values
-    init(name: String, id: String, latitude: Double, longitude: Double, waitTime: Int = 0, duration: Int = 0) {
+    init(name: String, id: String, coordinates: CLLocationCoordinate2D, waitTimes: [Int], duration : Int) {
         self.name = name
         self.id = id
-        self.latitude = latitude
-        self.longitude = longitude
-        self.waitTime = waitTime
+        self.coordinates = coordinates
+        self.waitTimes = waitTimes
         self.duration = duration
     }
 }
@@ -27,9 +27,9 @@ class SelectedRidesManager: ObservableObject {
     
     private init() {}
     
-    func addSelectedride(_ rideName: String) {
-        let newRide = Ride(name: rideName, id: rideName, latitude: 1, longitude: 1)
-        selectedRides.append(newRide)
+    func addSelectedride(_ ride: Ride) {
+        
+        selectedRides.append(ride)
     }
     
     func removeSelectedride(_ rideName: String) {

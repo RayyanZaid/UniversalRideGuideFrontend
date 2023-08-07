@@ -22,7 +22,7 @@ struct RideScheduleBox: View {
                 .foregroundColor(.white)
                 .shadow(radius: 60)
             
-            ScrollView {
+            
                 VStack(spacing: 10) {
                     Text("Your Next Ride")
                         .font(.headline)
@@ -53,6 +53,9 @@ struct RideScheduleBox: View {
                     Text("Up Next")
                         .font(.headline)
                         .padding(.top, 10)
+                    
+                    ScrollView {
+                        
                     ForEach(rideScheduleArray.dropFirst(), id: \.self) { ride in
                         Button(action: {
                             print(ride)
@@ -69,8 +72,9 @@ struct RideScheduleBox: View {
                                     .padding()
                             }.background(Color.cyan)
                                 .cornerRadius(20)
+                                .padding()
                         }
-                    }.padding()
+                    }
                 }
             }.frame(maxHeight: UIScreen.main.bounds.height * 0.5)
             
