@@ -7,7 +7,8 @@ struct MapView: View {
     @State var count = 0;
     
     var body: some View {
-        Map()
+        
+        Text("Map")
         
     
     }

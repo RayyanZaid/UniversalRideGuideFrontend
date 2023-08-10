@@ -29,7 +29,9 @@ class SelectedRidesManager: ObservableObject {
     
     func addSelectedride(_ ride: Ride) {
         
-        selectedRides.append(ride)
+        if !selectedRides.contains(where: { $0.name == ride.name }) {
+                    selectedRides.append(ride)
+                }
     }
     
     func removeSelectedride(_ rideName: String) {
@@ -37,7 +39,9 @@ class SelectedRidesManager: ObservableObject {
     }
     
     func getSelectedRides() -> [Ride] {
-        return selectedRides
+//        self.selectedRides = getSelectedRidesFromFirebase(email: "rayyanzaid0401@gmail.com")
+        return self.selectedRides
+        
     }
 }
 

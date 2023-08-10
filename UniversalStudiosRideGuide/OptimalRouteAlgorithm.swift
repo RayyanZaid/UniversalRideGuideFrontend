@@ -1,8 +1,10 @@
 
 
-func getOptimalRoute() -> [String] {
+func getOptimalRoute() -> [Ride] {
     
-    var rides : [String] = getSelectedRides(email: "rayyanzaid0401@gmail.com")
+//    var rides : [Ride] = getSelectedRidesFromFirebase(email: "rayyanzaid0401@gmail.com")
+    
+    var rides : [Ride] = []
     
     return rides
     

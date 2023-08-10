@@ -9,7 +9,7 @@ import SwiftUI
 
 struct RideScheduleBox: View {
     
-    @State var rideScheduleArray: [String] = getOptimalRoute()
+    @State var rideScheduleArray: [Ride] = []
     
     let rideButtonWidth = UIScreen.main.bounds.width * 0.5
     let rideButtonHeight = UIScreen.main.bounds.height * 0.2
@@ -29,24 +29,22 @@ struct RideScheduleBox: View {
                         .padding(.top, 10)
                     Button(action: {
                         if let firstRide = rideScheduleArray.first {
-                            print(firstRide)
+                            print(firstRide.name)
                         }
                     }) {
                         if let firstRide = rideScheduleArray.first {
                             HStack {
-                                Text(firstRide)
+                                Text(firstRide.name)
                                     .padding()
                                     .foregroundColor(.black)
-                           
-                          
-               
+                                
                                 Image(systemName: "ellipsis")
                                     .foregroundColor(.black)
                                     .padding()
-                            }.background(Color.cyan)
-                                .cornerRadius(20)
+                            }
                         }
                     }
+
                     
                     Spacer()
                     
@@ -55,27 +53,27 @@ struct RideScheduleBox: View {
                         .padding(.top, 10)
                     
                     ScrollView {
-                        
-                    ForEach(rideScheduleArray.dropFirst(), id: \.self) { ride in
-                        Button(action: {
-                            print(ride)
-                        }) {
-                            HStack {
-                                Text(ride)
-                                    .padding()
-                                    .foregroundColor(.black)
+                        ForEach(rideScheduleArray.dropFirst(), id: \.id) { ride in
+                            Button(action: {
+                                print(ride)
+                            }) {
+                                HStack {
+                                    Text(ride.name)
+                                        .padding()
+                                        .foregroundColor(.black)
+                                        .cornerRadius(10)
                                     
-                                    .cornerRadius(10)
-              
-                                Image(systemName: "ellipsis")
-                                    .foregroundColor(.black)
-                                    .padding()
-                            }.background(Color.cyan)
-                                .cornerRadius(20)
-                                .padding()
+                                    Image(systemName: "ellipsis")
+                                        .foregroundColor(.black)
+                                        .padding()
+                                }
+                            }
+                            .background(Color.cyan)
+                            .cornerRadius(20)
+                            .padding()
                         }
                     }
-                }
+
             }.frame(maxHeight: UIScreen.main.bounds.height * 0.5)
             
         }

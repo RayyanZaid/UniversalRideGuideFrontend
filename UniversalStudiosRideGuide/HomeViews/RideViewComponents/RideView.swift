@@ -21,33 +21,26 @@ struct RideView: View {
     var body: some View {
         VStack {
             List(allRides) { ride in
-                RideRow(ride: ride, isSelected: binding(for: ride)) // Update parameter name here
+                Text(ride.name)
             }
             .listStyle(PlainListStyle())
         }
         .onAppear {
-            RidesFromFirestore.shared.fetchRides { rides in
-                self.allRides = rides
+            fetchSelectedRidesFromFirebase(email: email) { rides in 
+                
+                for ride in rides {
+                    getRideObjectFromName(rideName: ride) { rideObj in
+                        selectedRidesManager.addSelectedride(rideObj)
+                    }
+                }
+                self.allRides = selectedRidesManager.getSelectedRides()
             }
         }
+        
     }
     
-    // Helper function to get the binding for isRideSelected property
-    private func binding(for ride: Ride) -> Binding<Bool> {
-        Binding<Bool>(
-            get: {
-                return selectedRidesManager.getSelectedRides().contains(where: { $0.id == ride.id }) // Add 'where:' label
-            },
-            set: { newValue in
-                if newValue {
-                    selectedRidesManager.addSelectedride(ride)
-                    print(selectedRidesManager.selectedRides)
-                } else {
-                    selectedRidesManager.removeSelectedride(ride.id)
-                }
-            }
-        )
-    }
+
+   
 }
 
 
@@ -91,9 +84,9 @@ struct RideRow: View {
 
                 Spacer()
                 
-                Text(String(isSelected)) // Use the local binding value
+                Text(String("hi")) // Use the local binding value
 
-            }
+            }.background(.white)
         }
         .frame(width: UIScreen.main.bounds.width * 0.9, height: UIScreen.main.bounds.height * 0.1)
         .padding()

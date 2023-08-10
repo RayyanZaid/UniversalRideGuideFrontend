@@ -1,0 +1,600 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "5D39D7D4-6208-4E91-AF8F-043F481D3666"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "02C0E1A7-F0FA-4A2B-9E56-FBB28A737BBA"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "UniversalStudiosRideGuide/HomeViews/RideViewComponents/RideView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "69"
+            endingLineNumber = "69"
+            landmarkName = "RideRow"
+            landmarkType = "14">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "7F850BAD-323C-4329-B383-1E360F42A866"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "UniversalStudiosRideGuide/HomeViews/RideViewComponents/RidesFromFirestore.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "19"
+            endingLineNumber = "19"
+            landmarkName = "fetchRides(completion:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "7F850BAD-323C-4329-B383-1E360F42A866 - 80b4510fb18eb319"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;__C.FIRQuerySnapshot&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in UniversalStudiosRideGuide.RidesFromFirestore.fetchRides(completion: (Swift.Array&lt;UniversalStudiosRideGuide.Ride&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "UniversalStudiosRideGuide"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/rayyanzaid/UniversalStudiosRideGuide/UniversalStudiosRideGuide/HomeViews/RideViewComponents/RidesFromFirestore.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "19"
+                  endingLineNumber = "19"
+                  offsetFromSymbolStart = "356">
+               </Location>
+               <Location
+                  uuid = "7F850BAD-323C-4329-B383-1E360F42A866 - 80b4510fb18eb319"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;__C.FIRQuerySnapshot&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in UniversalStudiosRideGuide.RidesFromFirestore.fetchRides(completion: (Swift.Array&lt;UniversalStudiosRideGuide.Ride&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "UniversalStudiosRideGuide"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/rayyanzaid/UniversalStudiosRideGuide/UniversalStudiosRideGuide/HomeViews/RideViewComponents/RidesFromFirestore.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "19"
+                  endingLineNumber = "19"
+                  offsetFromSymbolStart = "328">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "4B8E04AF-176D-40C8-AC25-CA219050B627"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "UniversalStudiosRideGuide/HomeViews/RideViewComponents/RidesFromFirestore.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "59"
+            endingLineNumber = "59"
+            landmarkName = "fetchRides(completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "7A119D72-9A52-45CD-9952-D1841D9C1559"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "UniversalStudiosRideGuide/HomeViews/RideViewComponents/RidesFromFirestore.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "21"
+            endingLineNumber = "21"
+            landmarkName = "fetchRides(completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "375589D9-CFEC-4D0F-85CF-7361B0B44D54"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "UniversalStudiosRideGuide/HomeViews/RideViewComponents/RidesFromFirestore.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "33"
+            endingLineNumber = "33"
+            landmarkName = "fetchRides(completion:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "375589D9-CFEC-4D0F-85CF-7361B0B44D54 - 80b4510fb18eb14f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;__C.FIRQuerySnapshot&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in UniversalStudiosRideGuide.RidesFromFirestore.fetchRides(completion: (Swift.Array&lt;UniversalStudiosRideGuide.Ride&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "UniversalStudiosRideGuide"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/rayyanzaid/UniversalStudiosRideGuide/UniversalStudiosRideGuide/HomeViews/RideViewComponents/RidesFromFirestore.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "33"
+                  endingLineNumber = "33"
+                  offsetFromSymbolStart = "1232">
+               </Location>
+               <Location
+                  uuid = "375589D9-CFEC-4D0F-85CF-7361B0B44D54 - 80b4510fb18eb14f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;__C.FIRQuerySnapshot&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in UniversalStudiosRideGuide.RidesFromFirestore.fetchRides(completion: (Swift.Array&lt;UniversalStudiosRideGuide.Ride&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "UniversalStudiosRideGuide"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/rayyanzaid/UniversalStudiosRideGuide/UniversalStudiosRideGuide/HomeViews/RideViewComponents/RidesFromFirestore.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "33"
+                  endingLineNumber = "33"
+                  offsetFromSymbolStart = "396">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "58993510-1887-454F-B255-6039E6F25328"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "UniversalStudiosRideGuide/HomeViews/RideViewComponents/RidesFromFirestore.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "34"
+            endingLineNumber = "34"
+            landmarkName = "fetchRides(completion:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "58993510-1887-454F-B255-6039E6F25328 - 80b4510fb18eb1ea"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;__C.FIRQuerySnapshot&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in UniversalStudiosRideGuide.RidesFromFirestore.fetchRides(completion: (Swift.Array&lt;UniversalStudiosRideGuide.Ride&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "UniversalStudiosRideGuide"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/rayyanzaid/UniversalStudiosRideGuide/UniversalStudiosRideGuide/HomeViews/RideViewComponents/RidesFromFirestore.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "36"
+                  endingLineNumber = "36"
+                  offsetFromSymbolStart = "1308">
+               </Location>
+               <Location
+                  uuid = "58993510-1887-454F-B255-6039E6F25328 - 80b4510fb18eb128"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;__C.FIRQuerySnapshot&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in UniversalStudiosRideGuide.RidesFromFirestore.fetchRides(completion: (Swift.Array&lt;UniversalStudiosRideGuide.Ride&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "UniversalStudiosRideGuide"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/rayyanzaid/UniversalStudiosRideGuide/UniversalStudiosRideGuide/HomeViews/RideViewComponents/RidesFromFirestore.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "34"
+                  endingLineNumber = "34"
+                  offsetFromSymbolStart = "1232">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "5914821D-5D4A-410A-8414-0BF8CDD3FDD5"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "UniversalStudiosRideGuide/HomeViews/RideViewComponents/RidesFromFirestore.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "36"
+            endingLineNumber = "36"
+            landmarkName = "fetchRides(completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "7D4F3A23-F2D9-4338-97B2-FF87AFA9CE6C"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "UniversalStudiosRideGuide/HomeViews/RideViewComponents/RidesFromFirestore.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "35"
+            endingLineNumber = "35"
+            landmarkName = "fetchRides(completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "7C1739C7-BFA1-4740-AC3E-F8B4FF1B2BE8"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "UniversalStudiosRideGuide/HomeViews/RideViewComponents/RidesFromFirestore.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "37"
+            endingLineNumber = "37"
+            landmarkName = "fetchRides(completion:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "7C1739C7-BFA1-4740-AC3E-F8B4FF1B2BE8 - 80b4510fb18eb1cb"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;__C.FIRQuerySnapshot&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in UniversalStudiosRideGuide.RidesFromFirestore.fetchRides(completion: (Swift.Array&lt;UniversalStudiosRideGuide.Ride&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "UniversalStudiosRideGuide"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/rayyanzaid/UniversalStudiosRideGuide/UniversalStudiosRideGuide/HomeViews/RideViewComponents/RidesFromFirestore.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "37"
+                  endingLineNumber = "37"
+                  offsetFromSymbolStart = "1488">
+               </Location>
+               <Location
+                  uuid = "7C1739C7-BFA1-4740-AC3E-F8B4FF1B2BE8 - 80b4510fb18eb1cb"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;__C.FIRQuerySnapshot&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in UniversalStudiosRideGuide.RidesFromFirestore.fetchRides(completion: (Swift.Array&lt;UniversalStudiosRideGuide.Ride&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "UniversalStudiosRideGuide"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/rayyanzaid/UniversalStudiosRideGuide/UniversalStudiosRideGuide/HomeViews/RideViewComponents/RidesFromFirestore.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "37"
+                  endingLineNumber = "37"
+                  offsetFromSymbolStart = "1308">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "5157AF38-0F93-4AEA-A6B5-FCA5E8790A63"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "UniversalStudiosRideGuide/HomeViews/RideViewComponents/RidesFromFirestore.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "38"
+            endingLineNumber = "38"
+            landmarkName = "fetchRides(completion:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "5157AF38-0F93-4AEA-A6B5-FCA5E8790A63 - 80b4510fb18eb194"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;__C.FIRQuerySnapshot&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in UniversalStudiosRideGuide.RidesFromFirestore.fetchRides(completion: (Swift.Array&lt;UniversalStudiosRideGuide.Ride&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "UniversalStudiosRideGuide"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/rayyanzaid/UniversalStudiosRideGuide/UniversalStudiosRideGuide/HomeViews/RideViewComponents/RidesFromFirestore.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "38"
+                  endingLineNumber = "38"
+                  offsetFromSymbolStart = "1736">
+               </Location>
+               <Location
+                  uuid = "5157AF38-0F93-4AEA-A6B5-FCA5E8790A63 - 80b4510fb18eb194"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;__C.FIRQuerySnapshot&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in UniversalStudiosRideGuide.RidesFromFirestore.fetchRides(completion: (Swift.Array&lt;UniversalStudiosRideGuide.Ride&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "UniversalStudiosRideGuide"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/rayyanzaid/UniversalStudiosRideGuide/UniversalStudiosRideGuide/HomeViews/RideViewComponents/RidesFromFirestore.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "38"
+                  endingLineNumber = "38"
+                  offsetFromSymbolStart = "1488">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "C0B6E56A-E59F-4D9F-A8B6-2E244A92D819"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "UniversalStudiosRideGuide/HomeViews/RideViewComponents/RidesFromFirestore.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "39"
+            endingLineNumber = "39"
+            landmarkName = "fetchRides(completion:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "C0B6E56A-E59F-4D9F-A8B6-2E244A92D819 - 80b4510fb18eb675"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;__C.FIRQuerySnapshot&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in UniversalStudiosRideGuide.RidesFromFirestore.fetchRides(completion: (Swift.Array&lt;UniversalStudiosRideGuide.Ride&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "UniversalStudiosRideGuide"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/rayyanzaid/UniversalStudiosRideGuide/UniversalStudiosRideGuide/HomeViews/RideViewComponents/RidesFromFirestore.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "39"
+                  endingLineNumber = "39"
+                  offsetFromSymbolStart = "1964">
+               </Location>
+               <Location
+                  uuid = "C0B6E56A-E59F-4D9F-A8B6-2E244A92D819 - 80b4510fb18eb675"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;__C.FIRQuerySnapshot&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in UniversalStudiosRideGuide.RidesFromFirestore.fetchRides(completion: (Swift.Array&lt;UniversalStudiosRideGuide.Ride&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "UniversalStudiosRideGuide"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/rayyanzaid/UniversalStudiosRideGuide/UniversalStudiosRideGuide/HomeViews/RideViewComponents/RidesFromFirestore.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "39"
+                  endingLineNumber = "39"
+                  offsetFromSymbolStart = "1736">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "FF4AEAF3-6E0E-4624-B1DE-0B81B138336E"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "UniversalStudiosRideGuide/HomeViews/RideViewComponents/RidesFromFirestore.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "46"
+            endingLineNumber = "46"
+            landmarkName = "fetchRides(completion:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "FF4AEAF3-6E0E-4624-B1DE-0B81B138336E - 80b4510fb18eb69c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;__C.FIRQuerySnapshot&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in UniversalStudiosRideGuide.RidesFromFirestore.fetchRides(completion: (Swift.Array&lt;UniversalStudiosRideGuide.Ride&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "UniversalStudiosRideGuide"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/rayyanzaid/UniversalStudiosRideGuide/UniversalStudiosRideGuide/HomeViews/RideViewComponents/RidesFromFirestore.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "46"
+                  endingLineNumber = "46"
+                  offsetFromSymbolStart = "2220">
+               </Location>
+               <Location
+                  uuid = "FF4AEAF3-6E0E-4624-B1DE-0B81B138336E - 80b4510fb18eb69c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;__C.FIRQuerySnapshot&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in UniversalStudiosRideGuide.RidesFromFirestore.fetchRides(completion: (Swift.Array&lt;UniversalStudiosRideGuide.Ride&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "UniversalStudiosRideGuide"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/rayyanzaid/UniversalStudiosRideGuide/UniversalStudiosRideGuide/HomeViews/RideViewComponents/RidesFromFirestore.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "46"
+                  endingLineNumber = "46"
+                  offsetFromSymbolStart = "2040">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "BFBAB191-B165-4513-B440-BC34A1CEE335"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "UniversalStudiosRideGuide/HomeViews/RideViewComponents/RidesFromFirestore.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "42"
+            endingLineNumber = "42"
+            landmarkName = "fetchRides(completion:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "BFBAB191-B165-4513-B440-BC34A1CEE335 - 80b4510fb18eb610"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;__C.FIRQuerySnapshot&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in UniversalStudiosRideGuide.RidesFromFirestore.fetchRides(completion: (Swift.Array&lt;UniversalStudiosRideGuide.Ride&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "UniversalStudiosRideGuide"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/rayyanzaid/UniversalStudiosRideGuide/UniversalStudiosRideGuide/HomeViews/RideViewComponents/RidesFromFirestore.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "42"
+                  endingLineNumber = "42"
+                  offsetFromSymbolStart = "1988">
+               </Location>
+               <Location
+                  uuid = "BFBAB191-B165-4513-B440-BC34A1CEE335 - 80b4510fb18eb6f1"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;__C.FIRQuerySnapshot&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in UniversalStudiosRideGuide.RidesFromFirestore.fetchRides(completion: (Swift.Array&lt;UniversalStudiosRideGuide.Ride&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "UniversalStudiosRideGuide"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/rayyanzaid/UniversalStudiosRideGuide/UniversalStudiosRideGuide/HomeViews/RideViewComponents/RidesFromFirestore.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "43"
+                  endingLineNumber = "43"
+                  offsetFromSymbolStart = "1988">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "FD225490-F953-412F-9AF8-0D8B4EA62CDD"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "UniversalStudiosRideGuide/HomeViews/RideViewComponents/RidesFromFirestore.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "65"
+            endingLineNumber = "65"
+            landmarkName = "fetchRides(completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "F8AE455F-5B7E-4070-9768-8AFA1AF2F33B"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "UniversalStudiosRideGuide/HomeViews/RideViewComponents/RidesFromFirestore.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "64"
+            endingLineNumber = "64"
+            landmarkName = "fetchRides(completion:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "F8AE455F-5B7E-4070-9768-8AFA1AF2F33B - 80b4510fb18eb54e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;__C.FIRQuerySnapshot&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in UniversalStudiosRideGuide.RidesFromFirestore.fetchRides(completion: (Swift.Array&lt;UniversalStudiosRideGuide.Ride&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "UniversalStudiosRideGuide"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/rayyanzaid/UniversalStudiosRideGuide/UniversalStudiosRideGuide/HomeViews/RideViewComponents/RidesFromFirestore.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "64"
+                  endingLineNumber = "64"
+                  offsetFromSymbolStart = "3660">
+               </Location>
+               <Location
+                  uuid = "F8AE455F-5B7E-4070-9768-8AFA1AF2F33B - 80b4510fb18eb54e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;__C.FIRQuerySnapshot&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in UniversalStudiosRideGuide.RidesFromFirestore.fetchRides(completion: (Swift.Array&lt;UniversalStudiosRideGuide.Ride&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "UniversalStudiosRideGuide"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/rayyanzaid/UniversalStudiosRideGuide/UniversalStudiosRideGuide/HomeViews/RideViewComponents/RidesFromFirestore.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "64"
+                  endingLineNumber = "64"
+                  offsetFromSymbolStart = "1148">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "6AB763B4-BD13-466D-A1EA-AC2464F3CBAC"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "UniversalStudiosRideGuide/HomeViews/RideViewComponents/RideView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "29"
+            endingLineNumber = "29"
+            landmarkName = "body"
+            landmarkType = "24">
+            <Locations>
+               <Location
+                  uuid = "6AB763B4-BD13-466D-A1EA-AC2464F3CBAC - 6ba3c1eadb8b442d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #2 () -&gt; () in UniversalStudiosRideGuide.RideView.body.getter : some"
+                  moduleName = "UniversalStudiosRideGuide"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/rayyanzaid/UniversalStudiosRideGuide/UniversalStudiosRideGuide/HomeViews/RideViewComponents/RideView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "31"
+                  endingLineNumber = "31"
+                  offsetFromSymbolStart = "24">
+               </Location>
+               <Location
+                  uuid = "6AB763B4-BD13-466D-A1EA-AC2464F3CBAC - b0fbd2ac6517a170"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Array&lt;Swift.String&gt;) -&gt; () in closure #2 () -&gt; () in UniversalStudiosRideGuide.RideView.body.getter : some"
+                  moduleName = "UniversalStudiosRideGuide"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/rayyanzaid/UniversalStudiosRideGuide/UniversalStudiosRideGuide/HomeViews/RideViewComponents/RideView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "32"
+                  endingLineNumber = "32"
+                  offsetFromSymbolStart = "68">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "3B0C8DDB-08A0-42BE-98DC-9484F3CEDFA8"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "UniversalStudiosRideGuide/HomeViews/RideViewComponents/RidesFromFirestore.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "41"
+            endingLineNumber = "41"
+            landmarkName = "fetchRides(completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

@@ -27,6 +27,7 @@ class RidesFromFirestore {
                 
                 var duration : Int = 0
                 
+               
                 
                 
                 for document in querySnapshot!.documents {
@@ -55,7 +56,7 @@ class RidesFromFirestore {
                         duration = data["duration"] as! Int
                     }
                     
-                    var newRide = Ride(name: name, id: id, coordinates: coordinates, waitTimes: waitTimes , duration: duration)
+                    let newRide = Ride(name: name, id: id, coordinates: coordinates, waitTimes: waitTimes , duration: duration)
                     
                     rides.append(newRide)
                     

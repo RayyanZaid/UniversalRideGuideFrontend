@@ -29,96 +29,113 @@ struct AuthView: View {
         
         
         let authScreenContent = ZStack {
-            Color.black.edgesIgnoringSafeArea(.all)
-            GeometryReader { geometry in
-                VStack(spacing: 20) {
-                    Image("Logo")
-                        .resizable()
-                        .aspectRatio(contentMode: .fit)
-                        .frame(width: geometry.size.width * 0.6)
-                        .padding(.top, 30)
-
-                    VStack(spacing: 15) {
-                        TextField("Email", text: $email)
-                            .padding()
-                            .background(Color.white)
-                            .cornerRadius(10)
-                            .foregroundColor(.black)
-                            .accentColor(.black)
-                            .padding(.horizontal, 20)
-                            .font(.headline)
-                            .autocapitalization(.none)
-
-                        SecureField("Password", text: $password)
-                            .padding()
-                            .background(Color.white)
-                            .cornerRadius(10)
-                            .foregroundColor(.black)
-                            .accentColor(.black)
-                            .padding(.horizontal, 20)
-                            .font(.headline)
-                            .autocapitalization(.none)
-
-                        if !isLoginMode {
-                            SecureField("Confirm Password", text: $confirmPassword)
+            ZStack {
+                
+                Rectangle()
+                    .fill(LinearGradient(
+                        gradient: Gradient(colors: [
+                            Color(red: 0.051, green: 0.196, blue: 0.302), // Custom color with RGB values
+                            Color(red: 0.498, green: 0.353, blue: 0.514) // Custom color with RGB values
+                        ]),
+                        startPoint: .top,
+                        endPoint: .bottom
+                    ))
+                    .edgesIgnoringSafeArea(.all)
+                
+                GeometryReader { geometry in
+                    VStack(spacing: 20) {
+                        Image("Logo")
+                            .resizable()
+                            .aspectRatio(contentMode: .fit)
+                            .frame(width: geometry.size.width * 0.6)
+                            .padding(.top, 30)
+                        
+                        VStack(spacing: 15) {
+                            TextField("Email", text: $email)
+                                .foregroundColor(.white) // Text color when typing
                                 .padding()
-                                .background(Color.white)
+                                .background(Color.black)
                                 .cornerRadius(10)
-                                .foregroundColor(.black)
                                 .accentColor(.black)
                                 .padding(.horizontal, 20)
                                 .font(.headline)
+                                .bold()
                                 .autocapitalization(.none)
+                                .colorScheme(.dark)
+                            
+                            SecureField("Password", text: $password)
+                                .foregroundColor(.white) // Text color when typing
+                                .padding()
+                                .background(Color.black)
+                                .cornerRadius(10)
+                                .accentColor(.black)
+                                .padding(.horizontal, 20)
+                                .font(.headline)
+                                .bold()
+                                .autocapitalization(.none)
+                                .colorScheme(.dark)
+                            if !isLoginMode {
+                                SecureField("Confirm Password", text: $confirmPassword)
+                                    .foregroundColor(.white) // Text color when typing
+                                    .padding()
+                                    .background(Color.black)
+                                    .cornerRadius(10)
+                                    .accentColor(.black)
+                                    .padding(.horizontal, 20)
+                                    .font(.headline)
+                                    .bold()
+                                    .autocapitalization(.none)
+                                    .colorScheme(.dark)
+                            }
+                            
+                            if let errorMessage = errorMessage {
+                                Text(errorMessage)
+                                    .foregroundColor(.white)
+                                    .padding(.top, 5)
+                            }
                         }
-
-                        if let errorMessage = errorMessage {
-                            Text(errorMessage)
+                        .padding(.vertical, 20)
+                        
+                        Button(action: {
+                            if isLoginMode {
+                                login()
+                            } else {
+                                signUp()
+                            }
+                        }) {
+                            Text(isLoginMode ? "Login" : "Signup")
+                                .font(.headline)
                                 .foregroundColor(.white)
-                                .padding(.top, 5)
+                                .padding()
+                                .frame(maxWidth: .infinity)
+                                .background(Color.blue)
+                                .cornerRadius(8)
+                                .padding(.horizontal, 20)
                         }
-                    }
-                    .padding(.vertical, 20)
-
-                    Button(action: {
-                        if isLoginMode {
-                            login()
-                        } else {
-                            signUp()
+                        .padding(.vertical, 10)
+                        
+                        Button(action: {
+                            isLoginMode.toggle()
+                        }) {
+                            Text(isLoginMode ? "Don't have an account? Sign up" : "Already have an account? Log in")
+                                .foregroundColor(Color.yellow)
+                                .underline()
                         }
-                    }) {
-                        Text(isLoginMode ? "Login" : "Signup")
-                            .font(.headline)
-                            .foregroundColor(.white)
-                            .padding()
-                            .frame(maxWidth: .infinity)
-                            .background(Color.blue)
-                            .cornerRadius(8)
-                            .padding(.horizontal, 20)
-                    }
-                    .padding(.vertical, 10)
-
-                    Button(action: {
-                        isLoginMode.toggle()
-                    }) {
-                        Text(isLoginMode ? "Don't have an account? Sign up" : "Already have an account? Log in")
-                            .foregroundColor(Color.white)
-                            .underline()
                     }
                 }
             }
-        }
             .navigationBarHidden(true)
             .alert(isPresented: $showAlert) {
                 Alert(title: Text("Verification Sent"),
                       message: Text("An email verification link has been sent to your email address."),
                       dismissButton: .default(Text("OK")))
             }
-    
+        }
         
         
         if successfulLogin {
                 if firstTimeLogin { // Check for successful login
-                    EnterUsernameView(email: "rayyanzaid0401@gmail.com")
+                    EnterUsernameView(email: email)
                 } else {
                     HomeView(email: email)
                 }
@@ -141,23 +158,16 @@ struct AuthView: View {
             return
         }
 
-//        #if DEBUG
-//        successfulLogin = true
-//        self.email = "rayyanzaid0401@gmail.com"
-//        #else
         Auth.auth().signIn(withEmail: email, password: password) { (result, error) in
             if error != nil {
                 errorMessage = error?.localizedDescription ?? ""
             } else {
                 print("Information is correct. Now checking if it's the first time")
-               firstTimeLoginFunction()
-                successfulLogin = true
+                firstTimeLoginFunction()
             }
         }
-        
-//        #endif
     }
-    
+
     func firstTimeLoginFunction() {
         let db = Firestore.firestore()
         let userRef = db.collection("users").document(email)
@@ -173,10 +183,12 @@ struct AuthView: View {
             if let document = document, document.exists {
                 print("Document exists")
                 firstTimeLogin = false // User exists, not the first time
+                successfulLogin = true // Set successfulLogin to true here
             } else {
                 print("Document does not exist")
                 print("Logging in for the first time")
                 firstTimeLogin = true // User does not exist, first time login
+                successfulLogin = true // Set successfulLogin to true here
             }
         }
     }
