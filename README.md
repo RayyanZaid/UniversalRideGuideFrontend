@@ -1,3 +1,7 @@
+# App Description (for developers)
+
+This app allows users to input rides they want to go on. It takes in those rides and outputs their optimal schedule.
+
 # UniversalStudiosRideGuide
 
 
