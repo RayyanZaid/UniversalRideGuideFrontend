@@ -10,6 +10,7 @@ import SwiftUI
 struct SplashView: View {
     
     @State var isActive: Bool = false
+    @StateObject private var selectedRidesManager = SelectedRidesManager.shared
     
     var body: some View {
         ZStack {
@@ -22,6 +23,8 @@ struct SplashView: View {
                 Text("Logo").foregroundColor(/*@START_MENU_TOKEN@*/.blue/*@END_MENU_TOKEN@*/)
             }
         }.onAppear {
+            selectedRidesManager.setAllRides()
+            
             DispatchQueue.main.asyncAfter(deadline: .now() + 2.5) {
                 withAnimation {
                     self.isActive = true

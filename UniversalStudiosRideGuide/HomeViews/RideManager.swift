@@ -24,6 +24,7 @@ class SelectedRidesManager: ObservableObject {
     static let shared = SelectedRidesManager()
     
     @Published  var selectedRides: [Ride] = []
+    @Published var allRides : [Ride] = []
     
     private init() {}
     
@@ -38,10 +39,15 @@ class SelectedRidesManager: ObservableObject {
         selectedRides.removeAll(where: { $0.name == rideName })
     }
     
-    func getSelectedRides() -> [Ride] {
-//        self.selectedRides = getSelectedRidesFromFirebase(email: "rayyanzaid0401@gmail.com")
-        return self.selectedRides
+ 
+    
+    func setAllRides() -> Void {
         
+        setAllRidesFromFirebase { rides in
+            self.allRides = rides
+//            print(self.allRides[0].name)
+        }
     }
+
 }
 

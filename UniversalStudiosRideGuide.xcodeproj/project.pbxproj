@@ -17,7 +17,6 @@
 		499EA5FB2A7CD9CE00F12A6F /* RideView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 499EA5FA2A7CD9CE00F12A6F /* RideView.swift */; };
 		499EA5FD2A7CDC7500F12A6F /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 499EA5FC2A7CDC7500F12A6F /* MapView.swift */; };
 		499EA5FF2A7CE05F00F12A6F /* FirebaseFunctionsGetters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 499EA5FE2A7CE05F00F12A6F /* FirebaseFunctionsGetters.swift */; };
-		499EA6012A7CE2BE00F12A6F /* OptimalRouteAlgorithm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 499EA6002A7CE2BE00F12A6F /* OptimalRouteAlgorithm.swift */; };
 		49C7EFE32A7B81C0004792A9 /* UniversalStudiosRideGuideApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C7EFE22A7B81C0004792A9 /* UniversalStudiosRideGuideApp.swift */; };
 		49C7EFE52A7B81C0004792A9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C7EFE42A7B81C0004792A9 /* ContentView.swift */; };
 		49C7EFE72A7B81C3004792A9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 49C7EFE62A7B81C3004792A9 /* Assets.xcassets */; };
@@ -26,7 +25,6 @@
 		49C7EFF32A7B82F3004792A9 /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C7EFF22A7B82F3004792A9 /* SplashView.swift */; };
 		49C7F0632A7B91D3004792A9 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 49C7F0622A7B91D3004792A9 /* FirebaseAuth */; };
 		49C7F0652A7B9204004792A9 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 49C7F0642A7B9204004792A9 /* FirebaseFirestore */; };
-		49D8B2092A80D1E300AAABF7 /* RidesFromFirestore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49D8B2082A80D1E300AAABF7 /* RidesFromFirestore.swift */; };
 		49D8B20B2A80E00900AAABF7 /* FirebaseFunctionsSetters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49D8B20A2A80E00900AAABF7 /* FirebaseFunctionsSetters.swift */; };
 /* End PBXBuildFile section */
 
@@ -41,7 +39,6 @@
 		499EA5FA2A7CD9CE00F12A6F /* RideView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RideView.swift; sourceTree = "<group>"; };
 		499EA5FC2A7CDC7500F12A6F /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		499EA5FE2A7CE05F00F12A6F /* FirebaseFunctionsGetters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseFunctionsGetters.swift; sourceTree = "<group>"; };
-		499EA6002A7CE2BE00F12A6F /* OptimalRouteAlgorithm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptimalRouteAlgorithm.swift; sourceTree = "<group>"; };
 		49C7EFDF2A7B81C0004792A9 /* UniversalStudiosRideGuide.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UniversalStudiosRideGuide.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		49C7EFE22A7B81C0004792A9 /* UniversalStudiosRideGuideApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UniversalStudiosRideGuideApp.swift; sourceTree = "<group>"; };
 		49C7EFE42A7B81C0004792A9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -49,7 +46,6 @@
 		49C7EFE92A7B81C3004792A9 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		49C7EFF02A7B8228004792A9 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		49C7EFF22A7B82F3004792A9 /* SplashView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
-		49D8B2082A80D1E300AAABF7 /* RidesFromFirestore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RidesFromFirestore.swift; sourceTree = "<group>"; };
 		49D8B20A2A80E00900AAABF7 /* FirebaseFunctionsSetters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseFunctionsSetters.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -79,7 +75,6 @@
 			isa = PBXGroup;
 			children = (
 				499EA5FA2A7CD9CE00F12A6F /* RideView.swift */,
-				49D8B2082A80D1E300AAABF7 /* RidesFromFirestore.swift */,
 			);
 			path = RideViewComponents;
 			sourceTree = "<group>";
@@ -124,7 +119,6 @@
 				499EA5F12A7C3B2D00F12A6F /* EnterUsernameView.swift */,
 				499EA5F32A7C899800F12A6F /* HomeView.swift */,
 				499EA5F52A7CD7B300F12A6F /* TabItemView.swift */,
-				499EA6002A7CE2BE00F12A6F /* OptimalRouteAlgorithm.swift */,
 				499EA5F72A7CD99B00F12A6F /* HomeViews */,
 				49C7EFE62A7B81C3004792A9 /* Assets.xcassets */,
 				49C7EFF02A7B8228004792A9 /* GoogleService-Info.plist */,
@@ -227,9 +221,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				499EA5FB2A7CD9CE00F12A6F /* RideView.swift in Sources */,
-				49D8B2092A80D1E300AAABF7 /* RidesFromFirestore.swift in Sources */,
 				49C7EFE52A7B81C0004792A9 /* ContentView.swift in Sources */,
-				499EA6012A7CE2BE00F12A6F /* OptimalRouteAlgorithm.swift in Sources */,
 				499EA5F62A7CD7B300F12A6F /* TabItemView.swift in Sources */,
 				49C7EFE32A7B81C0004792A9 /* UniversalStudiosRideGuideApp.swift in Sources */,
 				493442D62A7BA17900B87253 /* AuthView.swift in Sources */,

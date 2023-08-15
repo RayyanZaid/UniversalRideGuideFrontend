@@ -10,7 +10,7 @@ struct AuthView: View {
     @State private var confirmPassword: String = ""
     @State private var errorMessage: String?
     @State private var isLoginMode = true
-    @State private var firstTimeLogin : Bool = false
+
     
     
     // to track signup status
@@ -134,11 +134,10 @@ struct AuthView: View {
         
         
         if successfulLogin {
-                if firstTimeLogin { // Check for successful login
-                    EnterUsernameView(email: email)
-                } else {
-                    HomeView(email: email)
-                }
+               
+
+            EnterUsernameView(email: email)
+         
             }
         
         else {
@@ -163,35 +162,16 @@ struct AuthView: View {
                 errorMessage = error?.localizedDescription ?? ""
             } else {
                 print("Information is correct. Now checking if it's the first time")
-                firstTimeLoginFunction()
+                successfulLogin = true;
+               
             }
         }
     }
 
-    func firstTimeLoginFunction() {
-        let db = Firestore.firestore()
-        let userRef = db.collection("users").document(email)
-        
-        print("Querying Firestore for email: \(email)")
-        
-        userRef.getDocument { document, error in
-            if let error = error {
-                print("Error getting document: \(error)")
-                return
-            }
-            
-            if let document = document, document.exists {
-                print("Document exists")
-                firstTimeLogin = false // User exists, not the first time
-                successfulLogin = true // Set successfulLogin to true here
-            } else {
-                print("Document does not exist")
-                print("Logging in for the first time")
-                firstTimeLogin = true // User does not exist, first time login
-                successfulLogin = true // Set successfulLogin to true here
-            }
-        }
-    }
+
+
+   
+
 
 
     

@@ -33,11 +33,11 @@ struct LandingView: View {
         }
         .frame(height: 70)
         .padding(.horizontal, 20)
-//        .onAppear {
-//            getUsername(forEmail: email) { retrievedUsername in
-//                self.username = retrievedUsername
-//            }
-//        }
+        .onAppear {
+            getUsername(forEmail: email) { retrievedUsername in
+                self.username = retrievedUsername
+            }
+        }
         
         // Uncomment the onAppear when using the Simulator.
         // For some reason firebase getUsername function doesn't work with the Live Preview

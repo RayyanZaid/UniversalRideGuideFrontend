@@ -8,11 +8,12 @@
 import FirebaseFirestore
 import CoreLocation
 
-let db = Firestore.firestore()
+
 
 
 func fetchSelectedRidesFromFirebase(email: String, completion: @escaping ([String]) -> Void) {
 
+    let db = Firestore.firestore()
     let rideDatabaseRef = db.collection("users").document(email)
 
     rideDatabaseRef.getDocument { (documentSnapshot, error) in
@@ -34,8 +35,44 @@ func fetchSelectedRidesFromFirebase(email: String, completion: @escaping ([Strin
     }
 }
 
+func setAllRidesFromFirebase(completion: @escaping ([Ride]) -> Void) {
+    
+    let db = Firestore.firestore()
+    let allRidesDatabaseRef = db.collection("rides")
+    
+    allRidesDatabaseRef.getDocuments { (querySnapshot, error) in
+        if let error = error {
+            print("Error fetching rides: \(error)")
+            completion([])
+            return
+        }
+        
+        var rides: [Ride] = []
+        
+        for document in querySnapshot!.documents {
+            if let rideData = document.data() as? [String: Any] {
+                // Parse the ride data and create a Ride object
+                if let name = rideData["name"] as? String,
+                   let id = rideData["name"] as? String,
+                   let waitTimes = rideData["waitTimes"] as? [Int],
+                   let geoPoint = rideData["coordinates"] as? GeoPoint,
+                   let duration = rideData["duration"] as? Int {
+                    
+                    let coordinates = CLLocationCoordinate2D(latitude: geoPoint.latitude, longitude: geoPoint.longitude)
+                    let ride = Ride(name: name, id: id, coordinates: coordinates, waitTimes: waitTimes, duration: duration)
+                    
+                    rides.append(ride)
+                }
+            }
+        }
+        
+        completion(rides)
+    }
+}
+
 func getRideObjectFromName(rideName: String, completion: @escaping (Ride) -> Void) {
     
+    let db = Firestore.firestore()
     let rideDatabaseRef = db.collection("rides").document(rideName)
     
     rideDatabaseRef.getDocument { (documentSnapshot , error) in
@@ -73,6 +110,9 @@ func getRideObjectFromName(rideName: String, completion: @escaping (Ride) -> Voi
 }
 
 func getUsername(forEmail email: String, completion: @escaping (String) -> Void) {
+    
+    let db = Firestore.firestore()
+    
     let userRef = db.collection("users").document(email)
     
     print("Querying Firestore for email: \(email)")

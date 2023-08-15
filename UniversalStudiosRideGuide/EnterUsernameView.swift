@@ -24,17 +24,18 @@ struct EnterUsernameView: View {
     
     @State private var isSuccessful = false;
     
+    @State private var userAlreadyExists = false;
     
     
     var body: some View {
         
-        if isSuccessful == false {
-            content
-        }
-        
-        else {
-            HomeView(email: email)
-        }
+        if userAlreadyExists {
+                    HomeView(email: email)
+                } else if isSuccessful {
+                    HomeView(email: email)
+                } else {
+                    content
+                }
     }
     var content: some View {
         
@@ -94,11 +95,6 @@ struct EnterUsernameView: View {
                     Button(action: {
                         print("Username Submit Button Clicked")
                         print(isSuccessful)
-//                        #if DEBUG
-//                        
-//                        isSuccessful = true
-//                        
-//                        #else
                         
                         let db = Firestore.firestore()
                         let userRef = db.collection("users").document(self.email)
@@ -121,6 +117,7 @@ struct EnterUsernameView: View {
                                 }
                                 
                                 isSuccessful = true
+                                userAlreadyExists = true;
                                 
                           
                                 
@@ -149,6 +146,13 @@ struct EnterUsernameView: View {
                     Spacer()
                     Spacer()
                     Spacer()
+                }.onAppear {
+                    firstTimeLoginFunction { isFirstTime in
+                        
+                        userAlreadyExists = !isFirstTime
+                        print("User exists = \(userAlreadyExists)")
+                        
+                    }
                 }
             }
         
@@ -156,6 +160,30 @@ struct EnterUsernameView: View {
         
         
         
+    }
+    
+    func firstTimeLoginFunction(completion: @escaping (Bool) -> Void) {
+        let db = Firestore.firestore()
+        let userRef = db.collection("users").document(email)
+        
+        print("Querying Firestore for email: \(email)")
+        
+        userRef.getDocument { document, error in
+            if let error = error {
+                print("Error getting document: \(error)")
+                completion(false)
+                return
+            }
+            
+            if let document = document, document.exists {
+                print("Document exists")
+                completion(false)
+            } else {
+                print("Document does not exist")
+                print("Logging in for the first time")
+                completion(true)
+            }
+        }
     }
 }
 
