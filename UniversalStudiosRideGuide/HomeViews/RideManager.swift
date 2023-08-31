@@ -7,7 +7,7 @@ struct Ride: Identifiable {
     let coordinates : CLLocationCoordinate2D
     let waitTimes: [Int]
     let duration: Int
-    
+    // hi
     
     // Designated initializer with default parameter values
     init(name: String, id: String, coordinates: CLLocationCoordinate2D, waitTimes: [Int], duration : Int) {
